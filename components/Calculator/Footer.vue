@@ -1,6 +1,5 @@
 <template>
-  <footer class="md:container mt-[20px] xl:mt-[24px] 2xl:mt-[40px]">
-    <!--md:pr-[4.8%] xl:ml-0 md:ml-[5px] -->
+  <footer class="md:container mb-[70px] mt-[20px] xl:mt-[24px] 2xl:mt-[40px]">
     <div
       class="flex flex-col md:flex-row pt-[20px] px-[15px] pb-[28px] md:pt-[26px] md:px-[19.65px] md:pb-[27px] xl:pt-[40px] xl:px-[32.5px] xl:pb-[36px] 2xl:pt-[55px] 2xl:px-[51px] 2xl:pb-[56px] bg-secondary md:rounded-[10px] xl:rounded-[16px]"
     >
@@ -22,10 +21,10 @@
         class="flex flex-col items-center mt-[15px] mr-[10px] md:mt-[2px] md:mr-0 md:w-[46%] xl:mt-0 xl:w-[44%] 2xl:w-[45%]"
       >
         <a
-          href="tel:88008889028"
+          :href="`tel:${phone}`"
           class="font-roboto font-medium text-text-blue text-26 leading-[30px] md:text-24 md:leading-[28px] xl:text-40 xl:leading-[46px] 2xl:text-50"
         >
-          8 (800) 888-90-28
+          {{ phone | formatPhone }}
         </a>
         <p
           class="mt-[5px] md:mt-[6px] md:mr-[5px] xl:mt-[20px] xl:mr-[25px] 2xl:mt-[25px] 2xl:mr-0 font-roboto text-text-main text-12 leading-[14px] uppercase xl:text-18 xl:leading-[21px] 2xl:text-24 2xl:leading-[28px] tracking-[1px]"
@@ -33,10 +32,10 @@
           или
         </p>
         <a
-          href="mailto:info@example.ru"
+          :href="`mailto:${email}`"
           class="mt-[5px] md:mt-0 xl:mt-[20px] xl:mr-[20px] 2xl:mt-[10px] 2xl:mr-0 font-roboto text-text-blue text-18 leading-[21px] md:text-20 md:leading-[23px] xl:text-24 xl:leading-[28px] 2xl:text-34 2xl:leading-[40px] tracking-[1px]"
         >
-          info@example.ru
+          {{ email }}
         </a>
       </div>
     </div>
@@ -44,5 +43,15 @@
 </template>
 
 <script>
-export default {};
+import formatPhone from "@/assets/js/formatPhone.js";
+import { mapState } from "vuex";
+
+export default {
+  filters: {
+    formatPhone,
+  },
+  computed: {
+    ...mapState(["phone", "email"]),
+  },
+};
 </script>

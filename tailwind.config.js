@@ -6,16 +6,15 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}"
-    // './public/**/*.html',
-    // './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     screens: {
       sm: "480px",
       md: "768px",
       xl: "1280px",
-      "2xl": "1600px"
+      "2xl": "1600px",
+      "3xl": "1920px"
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"]
@@ -80,15 +79,11 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        // DEFAULT: "1rem",
-        // md: "2rem",
-        // xl: "4rem",
         DEFAULT: "4%",
         md: "3.2%",
         xl: "4.2%",
-        "2xl": "5%"
-        // "2xl": "5rem"
-        // "2xl": "10rem"
+        "2xl": "5%",
+        "3xl": "5%"
       }
     }
   },

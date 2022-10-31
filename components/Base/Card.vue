@@ -1,8 +1,7 @@
 <template>
   <li
-    class="pt-[26px] px-[24.15px] pb-[40px] md:px-[30px] md:pt-[39px] md:pb-[48.3px] xl:pt-[46px] xl:pt-[40px] xl:px-[24.15px] 2xl:pt-[40px] 2xl:pb-[46px] 2xl:px-[30px] w-[330px] md:w-[345.85px] xl:w-[370px] 2xl:w-[460px] bg-gray rounded-[16px] cursor-pointer hover:drop-shadow-primary"
+    class="pt-[26px] px-[24.15px] pb-[30px] md:px-[30px] md:pt-[39px] md:pb-[48.3px] xl:pt-[46px] xl:pt-[40px] xl:px-[24.15px] 2xl:pt-[40px] 2xl:pb-[46px] 2xl:px-[30px] w-[330px] md:w-[345.85px] xl:w-[370px] 2xl:w-[460px] bg-gray rounded-[16px] cursor-pointer hover:drop-shadow-primary"
   >
-    <!-- hover:drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)] -->
     <div
       class="flex justify-center items-center w-[50px] h-[50px] md:w-[52px] md:h-[52px] xl:w-[56px] xl:h-[56px] 2xl:w-[70px] 2xl:h-[70px] border-[4px] rounded-tr-[15px] rounded-bl-[15px]"
       :class="red ? 'border-red' : 'border-primary'"
@@ -26,7 +25,7 @@
     </p>
     <BaseList
       :list="infoRate"
-      class="mt-[20px] md:mt-[35px] xl:mt-[30px] 2xl:gap-y-[10px] font-medium text-text-gray-950 md:text-14 xl:text-15 2xl:text-16 xl:leading-[20px]"
+      class="mt-[20px] md:mt-[35px] xl:mt-[30px] 2xl:gap-y-[12px] font-medium text-text-gray-950 md:text-14 xl:text-15 2xl:text-16 xl:leading-[20px]"
     />
   </li>
 </template>

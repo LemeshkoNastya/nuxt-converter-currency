@@ -49,6 +49,8 @@ export const state = () => ({
       text: "incididunt ut labore"
     },
   ],
+  phone: "88008889028",
+  email: "info@example.ru",
 })
 
 export const mutations = {
@@ -79,12 +81,6 @@ export const getters = {
   resultCalculator(state) {
     return state.resultCalculator;
   },
-  imagesCalculator(state) {
-    return state.imagesCalculator;
-  },
-  listCalculator(state) {
-    return state.listCalculator;
-  }
 }
 
 export const actions = {
