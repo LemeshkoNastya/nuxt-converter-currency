@@ -14,8 +14,13 @@
       <div
         class="flex flex-col md:flex-row gap-x-[34px] mt-[38px] md:mt-[25px] xl:mt-[28px] 2xl:mt-[40px]"
       >
-        <BaseList :list="listCalculator" class="max-width-[]" />
+        <BaseList
+          v-if="listCalculator"
+          :list="listCalculator"
+          class="max-width-[]"
+        />
         <BaseImagesCube
+          v-if="imagesCalculator"
           :images="imagesCalculator"
           class="mt-[22px] md:mt-[5px]"
         />
