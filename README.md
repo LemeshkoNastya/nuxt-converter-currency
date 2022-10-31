@@ -1,5 +1,7 @@
 # test-currency-converter
 
+## [Demo](https://lemeshkonastya.github.io/nuxt-converter-currency/)
+
 ## Build Setup
 
 ```bash
