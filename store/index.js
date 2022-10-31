@@ -64,12 +64,6 @@ export const mutations = {
   updateResultCalculator(state, value) {
     state.resultCalculator = value;
   },
-  imagesCalculator(state) {
-    return state.imagesCalculator;
-  },
-  listCalculator(state) {
-    return state.listCalculator;
-  }
 }
 
 export const getters = {
@@ -85,6 +79,12 @@ export const getters = {
   resultCalculator(state) {
     return state.resultCalculator;
   },
+  imagesCalculator(state) {
+    return state.imagesCalculator;
+  },
+  listCalculator(state) {
+    return state.listCalculator;
+  }
 }
 
 export const actions = {
